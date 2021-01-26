@@ -1,0 +1,42 @@
+//Section And Footer
+section,
+footer {
+  background: black;
+  padding: 4rem 6rem;
+  border-top: 8px solid #eee;
+  @include screen-size(tab-land) {
+    padding: 3rem 4rem;
+  }
+  @include screen-size(tab-port) {
+    padding: 3rem 2rem;
+  }
+}
+
+//Footer List
+.footer-lists {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  & > * {
+    margin: 2rem;
+    flex: 1 0 100px;
+
+    @include screen-size(tablet) {
+      margin-top: 0;
+    }
+    @include screen-size(phone) {
+      margin: 0;
+      flex: 0 0 calc(50% - 4rem);
+    }
+  }
+}
+
+//Section FAQ
+.section-faq {
+  @include screen-size(phone) {
+    padding: 3rem 0;
+  }
+}

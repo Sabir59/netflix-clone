@@ -1,0 +1,31 @@
+.form {
+  width: 100%;
+  max-width: 70rem;
+  &__title {
+    font-size: 1.9rem;
+    color: $color-white;
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.3;
+  }
+  &__input {
+    padding: 2.3rem 2rem;
+    border: none;
+    background: $color-tertiary;
+    flex: 0 0 64%;
+    @include screen-size(phone) {
+      padding: 2rem 1.8rem;
+    }
+  }
+
+  &__input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-size(tab-port) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+}

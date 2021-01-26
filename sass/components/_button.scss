@@ -1,0 +1,24 @@
+.btn {
+  background: $color-primary;
+  color: $color-white;
+  padding: 0.7rem 1.7rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 2px;
+  text-transform: capitalize;
+
+  &--get-started {
+    padding: 1.52rem;
+    border: none;
+    flex: 0 0 36%;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+
+    @include screen-size(tab-port) {
+      align-self: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+      padding: 1.52rem 2rem;
+    }
+  }
+}

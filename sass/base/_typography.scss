@@ -1,0 +1,17 @@
+.heading-primary {
+  line-height: 1.4;
+  font-size: 4.6rem;
+  color: $color-white;
+  font-weight: 800;
+  @include screen-size(phone) {
+    font-size: 3.32rem;
+  }
+}
+.heading-secondary {
+  font-size: 2.6rem;
+  color: $color-white;
+
+  @include screen-size(tab-port) {
+    font-size: 2.2rem;
+  }
+}

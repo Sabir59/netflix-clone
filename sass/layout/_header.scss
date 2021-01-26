@@ -1,0 +1,48 @@
+// Header
+.header-wrapper {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85) 20%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../../assets/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+//Header
+.header {
+  max-width: 1920px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1920px;
+  padding: 2.5rem 6rem;
+  margin: 0 auto;
+
+  @include screen-size(phone) {
+    padding: 2rem 2rem;
+  }
+  &__navbar {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    margin: 14rem 0;
+    @include screen-size(phone) {
+      margin: 7rem 0;
+    }
+  }
+  &__text {
+    max-width: 65rem;
+    text-align: center;
+  }
+}

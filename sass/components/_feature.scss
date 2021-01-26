@@ -1,0 +1,24 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include screen-size(tab-port) {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  & > * {
+    margin: 2rem;
+  }
+  &__photo-frame {
+    flex: 1;
+  }
+  &__text {
+    flex: 1;
+  }
+  &__photo {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

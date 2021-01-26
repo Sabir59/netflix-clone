@@ -1,0 +1,21 @@
+//Footer List
+.footer-lists {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  & > * {
+    margin: 2rem;
+    flex: 1 0 100px;
+
+    @include screen-size(tablet) {
+      margin-top: 0;
+    }
+    @include screen-size(phone) {
+      margin: 0;
+      flex: 0 0 calc(50% - 4rem);
+    }
+  }
+}
